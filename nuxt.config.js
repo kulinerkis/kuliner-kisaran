@@ -3,7 +3,7 @@ export default {
   ssr: false,
   target: "static",
   router: {
-    base: "/Kuliner-Kisaran/",
+    base: "/kuliner-kisaran/",
   },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
