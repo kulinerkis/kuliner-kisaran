@@ -1,0 +1,50 @@
+<template>
+  <section id="contact" class="bg-white py-10 md:py-14 lg:py-20 container">
+    <h2
+      class="relative text-24 lg:text-40 pb-10 xl:pb-20 z-10 font-semibold text-center"
+    >
+      <span class="font-bold">Toko Online</span> Kami
+    </h2>
+    <div
+      class="grid grid-cols-2 lg:grid-cols-4 bg-white lg:py-8 md:px-24 lg:px-32 w-full gap-4 md:gap-8 lg:gap-14 items-center lg:rounded-full contact"
+    >
+      <img
+        v-for="(contact, id) in contactList"
+        :key="id"
+        class="w-[100px] mx-auto"
+        :src="`/images/contact/${contact.name}.png`"
+        alt=""
+      />
+    </div>
+  </section>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      contactList: [
+        {
+          name: "toped",
+        },
+        {
+          name: "shopee",
+        },
+        {
+          name: "gofood",
+        },
+        {
+          name: "grabfood",
+        },
+      ],
+    };
+  },
+};
+</script>
+
+<style scoped>
+.contact {
+  background: #ffffff;
+  box-shadow: 0px 29px 62px -22px rgba(10, 125, 250, 0.04);
+}
+</style>
