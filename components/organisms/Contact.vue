@@ -12,7 +12,7 @@
         v-for="(contact, id) in contactList"
         :key="id"
         class="w-[100px] mx-auto"
-        :src="`/images/contact/${contact.name}.png`"
+        :src="require(`/images/contact/${contact.name}.png`)"
         alt=""
       />
     </div>

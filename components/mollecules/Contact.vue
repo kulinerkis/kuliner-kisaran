@@ -3,7 +3,7 @@
     <div class="order-last md:order-none flex space-x-2 xl:space-x-3 my-3">
       <a :href="`${linkImage}`" target="_blank"
         ><img
-          :src="`/images/icons/social-media/${imageFile}.svg`"
+          :src="require(`/images/icons/social-media/${imageFile}.svg`)"
           :alt="`${imageFile} icon`"
       /></a>
     </div>
