@@ -50,19 +50,19 @@ export default {
       productlist: [
         {
           name: "Abon Bebek",
-          photo: "/images/product/abon.jpg",
+          photo: "abon.jpg",
         },
         {
           name: "Bawang Goreng Unye",
-          photo: "/images/product/bawanggoreng.jpg",
+          photo: "bawanggoreng.jpg",
         },
         {
           name: "Bakso Frozen",
-          photo: "/images/product/bakso.jpg",
+          photo: "bakso.jpg",
         },
         {
           name: "Gurami Bakar",
-          photo: "/images/product/guramibakar.jpg",
+          photo: "guramibakar.jpg",
         },
       ],
     };

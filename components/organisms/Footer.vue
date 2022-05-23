@@ -41,7 +41,7 @@
               alt="mail icon"
             />
             <a href="mailto:digidev.id@gmail.com">
-              <p>kuliner_kisaran.id@gmail.com</p>
+              <p>kulinerkisaran.id@gmail.com</p>
             </a>
           </div>
           <div class="flex space-x-2">
