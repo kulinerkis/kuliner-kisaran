@@ -73,7 +73,7 @@
       </div>
     </div>
     <div class="text-center text-white md:mt-4 py-2 lg:py-4">
-      <p>&copy; 2022 kuliner-Kisaran.id. All rights reserved</p>
+      <p>&copy; 2022 Kuliner-Kisaran.id. All rights reserved</p>
     </div>
   </div>
 </template>

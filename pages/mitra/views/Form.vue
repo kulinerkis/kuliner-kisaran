@@ -1,0 +1,204 @@
+<template>
+  <div
+    class="relative mt-32 bg-white rounded-t-[25px] md:rounded-t-[55px] pb-[0px] md:pb-[161px] px-[24px] sm:px-[24px] md:px-[380px] top-[-130px] sm:top-[-130px] md:-top-16 -mb-16 md:-mb-0"
+  >
+    <div class="lg:pt-[72px] md:pt-[72px] sm:pt-[32px] pt-[32px]">
+      <div class="space-y-[16px] lg:space-y-[40px]">
+        <Input
+          label="Nama Lengkap"
+          v-model="fullname"
+          placeholder="Masukkan Nama Lengkap"
+          :error="isErrorForm"
+        />
+
+        <Dropdown
+          title="Jenis Usaha"
+          @click="dropdownClass"
+          :choosedList="typeProduct"
+          :isOpen="isOpenClass"
+          :listDropdown="typeProductions"
+          @click-list="chooseClass"
+          :error="isErrorForm"
+        />
+
+        <Input
+          label="Nomor Whatsapp"
+          v-model="whatsapp"
+          placeholder="Masukkan Nomor Whatsapp"
+          :error="isErrorForm"
+        />
+
+        <Input
+          label="Email"
+          v-model="email"
+          placeholder="Masukkan Email"
+          :error="isErrorForm"
+        />
+
+        <Dropdown
+          title="Kota Domisili"
+          @click="dropdownCity"
+          :choosedList="city"
+          :isOpen="isOpenCity"
+          :listDropdown="cities"
+          @click-list="chooseCity"
+          :error="isErrorForm"
+        />
+
+        <Input
+          label="Alamat Lengkap"
+          v-model="address"
+          placeholder="Masukkan Alamat Lengkap"
+          :error="isErrorForm"
+        />
+      </div>
+    </div>
+    <Button
+      class="rounded h-[64px] w-full lg:w-[240px] mt-[40px] md:mb-[57px] mb-[0px] lg:float-right"
+      content="Daftar"
+      :is-loading="isLoadingSubmit"
+      @click="submit"
+    />
+  </div>
+</template>
+
+<script>
+import Button from "~/components/atoms/Button";
+import Input from "~/components/atoms/Input";
+import Dropdown from "~/components/atoms/Dropdown";
+export default {
+  components: { Button, Dropdown, Input },
+  data() {
+    return {
+      fullname: "",
+      className: "",
+      typeProduct: "Tipe Kelas",
+      email: "",
+      whatsapp: "",
+      city: "Pilih Kota",
+      address: "",
+      price: "",
+      date: "",
+      isOpenClass: false,
+      isOpenCity: false,
+      cities: ["Medan", "Jakarta", "Bandung", "Malang"],
+      typeProductions: ["Makanan", "Minuman", "Makanan dan Minuman"],
+      idClass: null,
+      isErrorForm: false,
+      isLoadingSubmit: false,
+    };
+  },
+  props: {
+    imageName: {
+      type: String,
+      default: "register",
+    },
+  },
+
+  computed: {
+    titleClass() {
+      if (this.className === "web-basic") {
+        return "Kelas Basic Modern Web";
+      } else if (this.className === "front-end") {
+        return "Kelas Frontend Master";
+      } else if (this.className === "back-end") {
+        return "Kelas Backend Master";
+      } else if (this.className === "full-stack") {
+        return "Kelas Basic Fullstack";
+      }
+    },
+    description() {
+      if (this.typeProduct.toLowerCase() === "group") {
+        return "Pilihan kelas group memiliki konsep pre-order, yang artinya menunggu sampai grup belajar mencapai minimal 3 orang.";
+      } else if (this.typeProduct.toLowerCase() === "private") {
+        return "Pilihan kelas private, 1 siswa akan diajarkan langsung oleh 1 mentor";
+      } else {
+        return "Silahkan lengkapi data di bawah";
+      }
+    },
+  },
+  methods: {
+    formatCurrency(num) {
+      if (num) {
+        return `Rp${num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.")}`;
+      } else if (num == 0) {
+        return `Rp${num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.")}`;
+      }
+    },
+    dropdownClass() {
+      this.isOpenClass = !this.isOpenClass;
+    },
+    dropdownCity() {
+      this.isOpenCity = !this.isOpenCity;
+    },
+    chooseClass(param) {
+      //0 for group, 1 fro private
+      this.price =
+        this.classList[this.idClass].classTypes[
+          param.toLowerCase() === "group" ? 0 : 1
+        ].realPrice;
+      this.typeProduct = param;
+      this.isOpenClass = false;
+    },
+    chooseCity(param) {
+      this.city = param;
+      this.isOpenCity = false;
+    },
+    routeToThankyouPage() {
+      this.$router.push(
+        `/thankyou?class-name=${this.className}&class-id=${this.idClass}&city=${this.city}`
+      );
+    },
+    submit() {
+      this.validate();
+    },
+    validate() {
+      if (
+        !this.fullname ||
+        !this.className ||
+        this.typeProduct === "Tipe Kelas" ||
+        !this.price ||
+        !this.email ||
+        !this.whatsapp ||
+        this.city === "Pilih Kota" ||
+        !this.address
+      ) {
+        this.isErrorForm = true;
+        return;
+      } else {
+        this.submitRegisterClass();
+      }
+    },
+    async submitRegisterClass() {
+      this.isLoadingSubmit = true;
+      const payload = {
+        fullname: this.fullname,
+        class: this.className,
+        class_type: this.typeProduct,
+        price: this.price,
+        whatsapp: this.whatsapp,
+        email: this.email,
+        city: this.city,
+        address: this.address,
+        date: `${new Date().getDate()}/${
+          new Date().getMonth() + 1
+        }/${new Date().getFullYear()}`,
+      };
+      try {
+        const res = await axios.post(
+          "https://digidev-api.herokuapp.com",
+          payload
+        );
+        if (res) {
+          this.isLoadingSubmit = false;
+          this.routeToThankyouPage();
+        }
+      } catch (err) {
+        console.log(err);
+      }
+    },
+  },
+};
+</script>
+
+<style></style>

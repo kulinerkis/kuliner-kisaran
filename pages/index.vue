@@ -3,6 +3,7 @@
     <Navigation />
     <Benefit />
     <Product />
+    <Join />
     <Contact />
     <Footer />
   </div>
@@ -12,10 +13,11 @@
 import Benefit from "../components/organisms/Benefit.vue";
 import Contact from "../components/organisms/Contact.vue";
 import Footer from "../components/organisms/Footer.vue";
+import Join from "../components/organisms/Join.vue";
 import Navigation from "../components/organisms/Navigation.vue";
 import Product from "../components/organisms/Product.vue";
 export default {
-  components: { Navigation, Benefit, Contact, Product, Footer },
+  components: { Navigation, Benefit, Contact, Product, Footer, Join },
   name: "IndexPage",
 };
 </script>

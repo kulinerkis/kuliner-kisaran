@@ -114,7 +114,7 @@ export default {
         },
         {
           name: "Jadi Mitra",
-          slug: "partner",
+          slug: "join",
         },
       ],
       classMenu: [
