@@ -23,7 +23,7 @@
               Gabung bersama kami membangun UMKM terbesar di Asahan. Dapatkan
               pengalaman dan peluang bersama-sama untuk meraih impian
             </p>
-            <nuxt-link to="/career">
+            <nuxt-link to="/mitra">
               <Button content="Join With Us" class="mt-5 lg:text-18 text-14" />
             </nuxt-link>
           </div>
