@@ -1,7 +1,7 @@
 <template>
   <div
     id="join"
-    class="relative mx-28 px-6 md:px-12 lg:px-24 xl:px-40 mt-20 py-12 text-center leading-snug lg:leading-loose rounded-[25px] gradient-banner"
+    class="relative mx-12 px-6 md:mx-24 lg:px-24 xl:px-40 mt-20 py-12 text-center leading-snug lg:leading-loose rounded-[25px] gradient-banner"
   >
     <div class="relative z-50">
       <h1 class="font-bold text-24 lg:text-40 pb-4">INGIN JADI MITRA?</h1>
