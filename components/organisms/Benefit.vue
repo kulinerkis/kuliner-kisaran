@@ -3,7 +3,7 @@
     <div class="absolute w-full bottom-4 xl:top-40 left-0 -z-10">
       <img
         class="w-full"
-        src="/images/vector/Vector123.png"
+        :src="require(`static/images/vector/Vector123.png`)"
         alt="background benefit"
       />
     </div>

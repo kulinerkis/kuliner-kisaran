@@ -29,7 +29,7 @@
           </div>
           <div class="absolute top-0 right-0 z-0 w-1/2 md:w-1/3 lg:w-auto">
             <img
-              :src="require(`/images/vector/vector736.png`)"
+              :src="require(`static/images/vector/vector736.png`)"
               alt="banner illustration"
             />
           </div>

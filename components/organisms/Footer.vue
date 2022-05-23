@@ -8,7 +8,7 @@
       <div class="max-w-md md:row-span-3 lg:col-span-2 md:pr-10 xl:pr-16">
         <img
           class="lg:w-[60px] w-[56px] md:mb-8"
-          :src="require(`/logo/k2.png`)"
+          :src="require(`static/logo/k2.png`)"
           alt="digidev logo"
         />
         <p
@@ -37,7 +37,7 @@
         <div class="md:text-base my-2 space-y-4 xl:space-y-4">
           <div class="flex space-x-2">
             <img
-              :src="require(`/images/icons/contact/email-icon.svg`)"
+              :src="require(`static/images/icons/contact/email-icon.svg`)"
               alt="mail icon"
             />
             <a href="mailto:digidev.id@gmail.com">
@@ -46,7 +46,7 @@
           </div>
           <div class="flex space-x-2">
             <img
-              :src="require(`/images/icons/contact/phone-icon.svg`)"
+              :src="require(`static/images/icons/contact/phone-icon.svg`)"
               alt="phone icon"
             />
             <a href="https://api.whatsapp.com/send?phone=6282277068394"
@@ -55,7 +55,7 @@
           </div>
           <div class="flex space-x-2">
             <img
-              :src="require(`/images/icons/contact/location-icon.svg`)"
+              :src="require(`static/images/icons/contact/location-icon.svg`)"
               alt="location icon"
             />
             <a href="">Jl. Diponegoro no.370 , Kisaran Baru, Asahan. 21216</a>
