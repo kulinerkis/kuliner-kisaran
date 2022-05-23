@@ -8,8 +8,8 @@
       <div class="max-w-md md:row-span-3 lg:col-span-2 md:pr-10 xl:pr-16">
         <img
           class="lg:w-[60px] w-[56px] md:mb-8"
-          :src="require(`static/logo/k2.png`)"
-          alt="digidev logo"
+          :src="require(`~/static/logo/k2.png`)"
+          alt="Kuliner Kisaran logo"
         />
         <p
           class="tn:text-sm md:text-base md:mt-2 mt-[24px] mb-0 lg:mb-[30px] space-y-1"
