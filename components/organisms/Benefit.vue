@@ -36,28 +36,28 @@ export default {
       dataBenefits: [
         {
           title: "Halal",
-          icon: "/images/vector/halal.png",
+          icon: "halal",
           start: "Olahan makanan dengan",
           bold: "label halal",
           end: "yang dapat membawa berkah buat tubuh.",
         },
         {
           title: "Higienis",
-          icon: "/images/vector/higynic.png",
+          icon: "higynic",
           start: "Alat dan bahan makanan yang selalu ",
           bold: "dijaga kebersihan",
           end: "dengan standart yang ditetapkan.",
         },
         {
           title: "Enak",
-          icon: "/images/vector/nice.png",
+          icon: "nice",
           start: "Produk makanan dan minuman diolah dengan",
           bold: "bumbu rempah pilihan.",
           end: "untuk menggugah selera",
         },
         {
           title: "Tahan Lama",
-          icon: "/images/vector/nature.png",
+          icon: "nature",
           start: "Produk olahan menggunakan",
           bold: "bahan pengawet alami",
           end: "menjadikan tahan lama",

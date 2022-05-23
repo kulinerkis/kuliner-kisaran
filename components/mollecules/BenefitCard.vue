@@ -1,7 +1,11 @@
 <template>
   <div class="relative px-[30px] py-10 rounded-xl shadow-xl bg-white">
     <div class="absolute w-6 h-6 p-8 bg-primary rounded-full top-[-25px]">
-      <img class="vector" :src="`${benefit.icon}`" alt="rating" />
+      <img
+        class="vector"
+        :src="require(`static/images/vector/${benefit.icon}.png`)"
+        alt="rating"
+      />
     </div>
     <h4 class="text-18 lg:text-24 mt-5 font-bold text-start">
       {{ benefit.title }}

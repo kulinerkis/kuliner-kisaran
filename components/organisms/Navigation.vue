@@ -38,7 +38,7 @@
     >
       <div>
         <nuxt-link to="/"
-          ><img class="w-14" src="~/static/logo/K2.png" alt="digidev brand"
+          ><img class="w-14" :src="`~/static/logo/K2.png`" alt="digidev brand"
         /></nuxt-link>
       </div>
       <div class="lg:hidden relative z-50">
