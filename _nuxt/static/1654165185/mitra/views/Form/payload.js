@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/mitra/views/Form", {data:[{}],fetch:{},mutations:void 0});
