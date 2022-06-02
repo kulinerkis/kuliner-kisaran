@@ -40,7 +40,7 @@
         <div class="py-1">
           <div v-for="(item, id) in listDropdown" :key="id">
             <p
-              class="text-gray-700 block px-4 py-2 text-sm cursor-pointer"
+              class="block px-4 py-2 text-sm cursor-pointer"
               @click="$emit('click-list', item, id)"
             >
               {{ item }}

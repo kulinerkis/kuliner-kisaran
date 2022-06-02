@@ -30,6 +30,9 @@ export default {
       },
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    script: [
+      // { src: "https://cdn.jsdelivr.net/npm/google-auth-library@8.0.2/" },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -45,6 +48,7 @@ export default {
   buildModules: ["@nuxt/postcss8"],
 
   // Modules: https://go.nuxtjs.dev/config-modules
+
   modules: [],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
@@ -55,6 +59,15 @@ export default {
         tailwindcss: {},
         autoprefixer: {},
       },
+    },
+    extend(config) {
+      config.node = {
+        fs: "empty",
+        child_process: "empty",
+        net: "empty",
+        dns: "empty",
+        tls: "empty",
+      };
     },
   },
 };

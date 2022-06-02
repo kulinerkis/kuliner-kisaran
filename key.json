@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "kulinerkisaran",
+  "private_key_id": "bda9547a7085c8550b270e6804d652b23a74984f",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDC3LM37JFhjYgM\n2in5f6aCtMlE5jrHaHwVyH+H0Mw6wRHe0ACbZ9UN4whi8yGPPXfaqKTP7uirIQKW\nR/YffvSMS+w++BQgtMuspMCFOa3o1ZGw4cnF+NuusoEsrZ7U+pmIhsoduZbTvjBS\nDCvaHMrtBVkvoJgVkjwcxuIizgS0DKRN+AuATI+4sneBz5DM/rLA4+nb8JHUjKdQ\n0mFmrlk91orDoH+pG7jeSEFUDQsXtIbdcnVd42CehMpJXFoYh2nZwJdUuh04RTN3\nFJP19cj2jiqvOAkCCSMEpdHqOLJDyr+6oIpWTgquXeI/c7DJvzCGgBCOo7bNQGNB\nHOG5iA3nAgMBAAECggEAWlLG2ANWGCvshliR4E6lNizqpn85e7kY21gGlUPZhtp7\nmBY+Ucq9XSSBfKxKQAU0CyzkyGVrf/dbJaHRmiPU4ztGFKIVYlurlSkA/EASNrzY\nPW9LgfKqkb24Vqdb2kkW5cvk4AZovVmJOF7f7Mgv39H81zDPjiAssQIXTB7G21W5\nqbu+NJX0ULQGMo+61x734KWQy3pqPbOtmSIgoMSSRwMNMaSXPr0BdgCL98AMAToT\nfNtA5Ewn8hZQ5RcW2QVG5HMVwxv/kkHPZs/E6I9Zz/aaUm0b3hg1JqqZoeHcuo1d\nmzbTbgVsBG0daUzBYnz/WsUUhUBdnpL+ynLCgqsI4QKBgQDlWXAidXfFlnKmjaMe\n9OuWT1VICn/hGdxavwwZc1af9phFZWctsMzfUQ97esgQ0iRPgMuJdWcmKxbb+68f\nsLWLIr9AzhLvPtE+rJbvV+0q0PMbkpgA31q8Wm3EzgaNezGdyrBbCVae2lZo2YZv\n4/1xeI2oouKuDFzZbeaKDORK6QKBgQDZgVqFrvUB5i187h+fpZj+RxJ4ng7eztSK\nsANyhFjTyyrjBHFewEyOUoj3Q1VcsKv4IjHwG9CMYKsajQyKLRCNRvVAbaj+fmNX\nO1ILFrVSFtZ8IjVtA+NHgsPfOomyVuGjcNpnUTTjdhuD7bhxdgsUqNFCbySI3zis\nwHldLHdwTwKBgQCk2lPKwQq1YL3KT/aXMs7//Mg8/ycKIy+LntVQmeIDGxo6j3fJ\nlNK+FiL9y7RwusvUxawHgvcArWpB9zfanIbxmqlEKJvdkhaPaTkYkufrpcOI5ycR\nQXqT9p/+HWUCXzG7zMxUs3Kqvh/sP6btWEB9Rnz0YRh0qHg45VEXm8qguQKBgEIM\nOq3PpAzQlc2TDb1P7vaAJIbGEGPuULJQoqtarxKZZkuLpNWN9XFedMMJClncOExg\nLePovlpyXGLyo/UtnBIakwzef+vP+2CY3eAKJENqNfV5+dlBzfmAJvSZdQjXwyr7\ncQbgrPvJeK+GN3UU0GaUoP7YezKo/i/PPsthXl+XAoGBALj6Seeuk1mTGJ/+mJmz\nfcgMIx1FixEBBgh1yfCH/4eEBd9T7ZdbbuBoerQZ19ALFLcI7gfe/cpjVjn98z7j\nNpOYQSsS2wN6TK/bOtzMSqOAzVyAtd4Vt7hyPIB7MOc8FL/qI6hJ86evCr1rNtsq\nO6pI45N1J1F4w/hrVXbfldvt\n-----END PRIVATE KEY-----\n",
+  "client_email": "service-account@kulinerkisaran.iam.gserviceaccount.com",
+  "client_id": "111469712122967390068",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/service-account%40kulinerkisaran.iam.gserviceaccount.com"
+}
